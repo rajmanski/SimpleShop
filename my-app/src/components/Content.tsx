@@ -34,20 +34,21 @@ const Content: React.FunctionComponent = () => {
     
 
     return (
+      <>
+        <h1>Here is a list of out all products</h1>
         <div className="content-wrapper">
-            <h1>Here is a list of out all products</h1>
+            
             {isLoading && (
               <h2>Wait a second, content is loading....</h2>
             )}
             {data && (
-              
-                    data.products.map((item: any) => (
-                        <ContentItem item={item} key={item.id}/>
-                    ))
-                    
-                
+              data.products.map((item: any) => (
+                <ContentItem item={item} key={item.id}/>
+                ))
+
             )}
         </div>
+        </>
     )
 }
 
