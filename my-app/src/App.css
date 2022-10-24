@@ -1,11 +1,12 @@
 .navbar {
-  height: 100px;
+  min-height: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #CCE3DE;
   color: #6B9080;
   padding: 10px;
+  flex-wrap: wrap;
 }
 
 .shop-name {
@@ -15,6 +16,7 @@
 
 .navigation-content {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   font-size: 1.3rem;
 }
